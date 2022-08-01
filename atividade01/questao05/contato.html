@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <main>
+        <h1>Contato</h1>
+        <form autocomplete="on" method="POST">
+            <div>
+                <label for="nome_sobrenome">Nome e sobrenome</label>
+                <input type="text" name="nome_sobrenome" placeholder="" size="50" class="largura-input">
+            </div>
+            
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="   seuemail@dominio.com" size="50" class="largura-input">
+            </div>
+            
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" placeholder="   (xx)xxxxx-xxxx" size="50" class="largura-input">
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
+            </div>
+            
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="email">
+                    <input type="radio" name="preferencia_contato" value="email" id="email">Email
+                </label>
+                <label for="telefone">
+                    <input type="radio" name="preferencia_contato" value="telefone" id="telefone">Telefone
+                </label>
+                <label for="whatsapp">
+                    <input type="radio" name="preferencia_contato" value="whatsapp" id="whatsapp">WhatsApp
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="horario">
+                    <option value="">Horário</option>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </fieldset>
+            <br/>
+            <div>
+                <input type="checkbox" name="receber_novidades" id="receber_novidades"> Gostaria de receber nossas novidades por email?
+            </div>
+    
+            <button> Enviar formulário </button>
+    
+        </form>
+        <br/>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>8h às 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>8h às 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>8h às 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <style>
+            .largura-input {
+                height: 30px;
+            }
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea {
+                display: block;
+                margin-bottom: 19px;
+            }
+
+            button{
+                margin-top: 16px;
+            }
+    
+            input[type="radio"]{
+                margin-right: 10px;
+            }
+
+            input[type=checkbox] {
+                display: inline-block;
+            }
+
+            thead {
+                background-color: rgb(0, 0, 0);
+                color: #fff;
+                font-weight: bold;
+            }
+            table {
+                border-collapse: collapse;
+            }
+    
+            thead tr th {
+                border: 1px solid rgb(255, 255, 255);
+    
+            }
+        
+            tbody th, tbody td {
+                border: solid 1px #444;
+            }
+            
+            th, td {
+                padding: 10px;
+            }
+        
+            tbody tr:hover {
+                background-color: #dedede;
+            }
+        </style>
+    </main>
+</body>
+</html>
