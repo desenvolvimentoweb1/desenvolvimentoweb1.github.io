@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> Informações Pessoais </h1>
+    <form autocomplete="on" method="POST">
+
+
+        <fieldset class="fieldset">
+
+            <legend>Cadastro do Cliente</legend>
+            <input type="hidden" name="id" value="3">
+            <div class="main">
+
+                <div class="labels">
+                    <label for="nome">Nome:</label>
+                    <label for="Sexo">Sexo:</label>
+                    <label for="Idade">Idade:</label>
+                    <label for="endereco">Endereço:</label>
+                    <label for="Cidade">Cidade:</label>
+                    <label for="Estado">Estado:</label>
+                    <label for="CEP">CEP:</label>
+                    <label for="Telefone">Tel/Res:</label>
+                    <label for="celular">Tel/Cel:</label>
+                    <label for="email">Email:</label>
+                </div>
+                
+                <div class="inputs">
+                    <input type="text" name="nome" placeholder="Nome Completo" size="40">
+                    <label for="masculino">
+                        <input type="radio" name="Sexo" value="Masculino" id="masculino">Masculino
+                    </label>
+                    <label for="feminino">
+                        <input type="radio" name="Sexo" value="Feminino" id="feminino">Feminino
+                    </label>
+                    <input type="number" name="Idade">
+                    <input type="text" name="endereco" placeholder="Digite o Endereço" size="50">
+                    <input type="text" name="Cidade" placeholder="Digite a Cidade">
+                    <select name="Estado">
+                        <option value="">UF</option>
+                        <option value="ac">Maranhãooo</option>
+                        <option value="pa">Pará</option>
+                        <option value="ce">Rio de Janeiro</option>
+                    </select>
+                    <input type="number" name="CEP" placeholder="XXXXX-XXX">
+                    <input type="number" name="Telefone" placeholder="(99)9999-9999">
+                    <input type="number" name="celular" placeholder="(99)9999-9999">
+                    <input type="email" name="email" placeholder="Digite o endereço de email" size="50">
+                </div>
+
+            </div>
+            
+        </fieldset>
+        
+        <button> Incluir </button>
+        
+    </form>
+    
+    <style>
+        
+        button {
+            margin-top: 16px;
+        }
+        
+        div input, div select {
+            margin-left: 20px;
+            justify-content: left;
+        }
+        
+        .labels label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .inputs select, .inputs input[type="text"], .inputs input[type="number"], .inputs input[type="email"] {
+            display: block;
+            margin-bottom: 13px;
+        }
+
+        fieldset .main{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+    </style>
+
+</body>
+
+</html>
