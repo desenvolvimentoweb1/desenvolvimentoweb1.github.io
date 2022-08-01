@@ -8,40 +8,40 @@
 </head>
 
 <body>
-    <h1> Informações Pessoais </h1>
+    <h1> Informações Pessoais</h1>
     <form autocomplete="on" method="POST">
         <fieldset>
             <legend>Cadastro do Cliente</legend>
             <input type="hidden" name="id" value="3">
 
             <div>
-                <label for="nome_completo">Nome:</label>
-                <input type="text" name="nome_completo" placeholder="Nome Completo" size="40">
+                <label for="nome_completo" >Nome:</label>
+                <input type="text" name="nome_completo" placeholder="Nome Completo" size="40" style="margin-left: 40px;">
             </div>
 
             <div>
-                <label for="Sexo">Sexo:</label>
+                <label for="Sexo" style="margin-right: 40px;">Sexo:</label>
                 <input type="radio" name="Sexo" value="Masculino"> Masculino
                 <input type="radio" name="Sexo" value="Feminino"> Feminino
             </div>
 
             <div>
-                <label for="Idade">Idade:</label>
+                <label for="Idade" style="margin-right: 40px;">Idade:</label>
                 <input type="number" name="Idade">
             </div>
             
             <div>
-                <label for="endereco">Endereço:</label>
+                <label for="endereco" style="margin-right: 10px;">Endereço:</label>
                 <input type="text" name="endereco" placeholder="Digite o Endereço" size="50">
             </div>
 
             <div>
-                <label for="Cidade">Cidade:</label>
+                <label for="Cidade" style="margin-right: 30px;">Cidade:</label>
                 <input type="text" name="Cidade" placeholder="Digite a Cidade">
             </div>
             
             <div>
-                <label for="Estado">Estado:</label>
+                <label for="Estado" style="margin-right: 30px;">Estado:</label>
                 <select name="Estado">
                     <option value="">UF</option>
                     <option value="ac">Maranhãooo</option>
@@ -51,22 +51,22 @@
             </div>
 
             <div>
-                <label for="CEP">CEP:</label>
+                <label for="CEP" style="margin-right: 50px;">CEP:</label>
                 <input type="number" name="CEP" placeholder="XXXXX-XXX">
             </div>
 
             <div>
-                <label for="Telefone">Tel/Res:</label>
+                <label for="Telefone" style="margin-right: 27px;">Tel/Res:</label>
                 <input type="number" name="Telefone" placeholder="(99)9999-9999">
             </div>
             
             <div>
-                <label for="celular">Tel/Cel:</label>
+                <label for="celular" style="margin-right: 30px;">Tel/Cel:</label>
                 <input type="number" name="celular" placeholder="(99)9999-9999">
             </div>
 
             <div>
-                <label for="email">Email:</label>
+                <label for="email" style="margin-right: 37px;">Email:</label>
                 <input type="email" name="email" placeholder="Digite o endereço de email" size="50">
             </div>
 
@@ -92,10 +92,9 @@
         div label, div input, div select{ 
             display: inline;
         }
-        div input{
-            margin-left: 20px;
-            justify-content: left;
-        }
+
+    
+
     </style>
 
 </body>
