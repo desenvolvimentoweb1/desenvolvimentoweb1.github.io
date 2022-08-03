@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Especificidade & Seletor</title>
+    <style>
+    
+        table {
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            padding: 15px;
+        }
+
+                /* questão 01  
+         #titulo, #subtitulo{
+            color: #3647a1;
+         }
+        */
+
+        /*questão 02*/
+
+        /*ul,ol{
+            color: #1013d5;
+            background-color: #d5d210;
+        }
+        */
+
+         /*
+        h2 ~ h3{
+            font-size: 50px;
+        }
+        */
+
+       /* questão 04
+        
+         #rodape> h2{
+        color: red;
+       }
+       */
+
+       /* questao 05
+        #rodape div{
+        border:dashed 7px red;
+       }
+       */
+
+       /* questao 06
+       h2 + h3{
+        font-size: 50px;
+       }
+       */
+
+       /* questao 07 
+       [name *= lista] {
+           background-color: #e3e2a6;
+        }
+        */
+
+        /* 
+            Questão 08
+        */
+        /* p {
+            font-family: sans-serif, Tahoma;
+        } */
+        /* 
+            Questão 08
+        */
+
+
+        
+        /* 
+            Questão 09
+        */
+        /* aside > :nth-child(odd) {
+            background-color: orangered;
+        } */
+        /* 
+            Questão 09
+        */
+       
+
+
+        /* 
+            Questão 10
+        */
+        /* [name] {
+            background-color: #b7e6d5;
+        } */
+        /* 
+            Questão 10
+        */
+
+
+
+        /* 
+            Questão 11
+        */
+        /* caption {
+            background-color: #0b5eb1;
+            color: #fff;
+            padding: 15px;
+            font-size: 20px;
+        } */
+        /* 
+            Questão 11
+        */
+
+
+
+        /* 
+            Questão 12
+        */
+        /* * > tr:nth-child(1) {
+            color: purple;
+            background-color: wheat;
+        } */
+        /* 
+            Questão 12
+        */
+
+
+
+        /* 
+            Questão 13
+        */
+        /* * tr:nth-child(2) {
+            color: wheat;
+            background-color: purple;
+        } */
+        /* 
+            Questão 13
+        */
+
+        
+
+        /* 
+            Questão 14
+        */
+        /* * > tr:nth-child(2n+2) {
+            color: black;
+            background-color: yellow;
+        } */
+        /* 
+            Questão 14
+        */
+
+
+
+        /* 
+            Questão 15
+        */
+        /* * > tr:nth-child(2n+1) {
+            color: white;
+            background-color: black;
+        } */
+        /* 
+            Questão 15
+        */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Título</h1>
+        <h2 id="subtitulo">Subtítulo</h2>
+        <h3 id="subsubtitulo">Subsubtitulo 1</h3>
+        <h3 id="subsubtitulo">Subsubtitulo 2</h3>
+    </header>
+    <main>
+        <section>
+            <h2 id="subtitulo">Subtítulo 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Doloribus, adipisci, corrupti provident consequuntur aliquam.</p>
+        </section>
+    </main>
+    <aside>
+        <h2 id="subtitulo">Subtítulo 3</h2>
+        <div id="lista ordenada">
+            <ul class="lista" name="lista">
+                <li>Lorem ipsum</li>
+                <li>Repudiandae quidem</li>
+                <li>Quisquam veniam</li>
+                <li>Repudiandae quod</li>
+                <li>Praesentium magnam</li>
+            </ul>
+        </div id="listaNaordenada">
+        <div>
+            <ol class="lista" name="lista ordenada">
+                <li>Lorem ipsum</li>
+                <li>Repudiandae quidem</li>
+                <li>Quisquam veniam</li>
+                <li>Repudiandae quod</li>
+                <li>Praesentium magnam</li>
+            </ol>
+        </div>
+    </aside>
+    <footer id="rodape">
+        <h2 id="subtitulo">Subtítulo 4</h2>
+        <section>
+            <div name="texto">
+                <p>Quibusdam, earum, culpa sed harum laboriosam!</p>
+            </div>
+        </section>
+        <table border="1">
+            <caption> Dados técnicos do equipamento </caption>
+            <tr>
+                <th rowspan="2">modelo</th>
+                <th rowspan="2">altura</th>
+                <th rowspan="2">largura</th>
+                <th colspan="2">acessórios</th>
+            </tr>
+
+            <tr>
+                <th>USB</th>
+                <th>WI-FI</th>
+            </tr>
+
+            <tr>
+                <td>Xk-7</td>
+                <td>20</td>
+                <td>20</td>
+                <td>SIM</td>
+                <td>NÃO</td>
+            </tr>
+
+            <tr>
+                <td>WZ8</td>
+                <td>10</td>
+                <td>15</td>
+                <td>NÃO</td>
+                <td>NÃO</td>
+            </tr>
+
+            <tr>
+                <td>X15</td>
+                <td>30</td>
+                <td>30</td>
+                <td>SIM</td>
+                <td>SIM</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
