@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro e-commerce</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Loja de Roupas e Acessórios</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Roupas</a>
+        <a href="#">Acessórios</a>
+        <a href="#" class="carrinho">
+            <img src="imagens/compra.png" alt="Compra" height="22px" width="22px" style="vertical-align: middle;">
+            <span>Carrinho de compras</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="sellcard">
+            <img src="imagens/jaqueta.jpg">
+            <p class="descricao">Jaqueta de couro - Roupa</p>
+            <p class="valor">R$ 279,00</p>
+            <p class="compra">COMPRAR</p>
+        </div>
+        <div class="sellcard">
+            <img src="imagens/bone.jpg">
+            <p class="descricao">Boné - Acessório</p>
+            <p class="valor">R$ 79,00</p>
+            <p class="compra">COMPRAR</p>
+        </div>
+        <div class="sellcard">
+            <img src="imagens/jaqueta.jpg">
+            <p class="descricao">Jaqueta de couro - Roupa</p>
+            <p class="valor">R$ 279,00</p>
+            <p class="compra">COMPRAR</p>
+        </div>
+        <div class="sellcard">
+            <img src="imagens/bone.jpg">
+            <p class="descricao">Boné - Acessório</p>
+            <p class="valor">R$ 79,00</p>
+            <p class="compra">COMPRAR</p>
+        </div>
+
+    </div>
+
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f2f2f2;
+    }
+
+    .header {
+        text-align: center;
+        padding: 30px;
+        background-color: white;
+    }
+
+    .topnav {
+        background-color: black;
+        align-items: center;
+        padding-top: 10px;
+        height: 40px;
+    }
+
+    .topnav a {
+        color: white;
+        text-decoration: none;
+        padding-left: 14px;
+        padding-right: 16px;
+    }
+
+    .topnav a:hover {
+        background-color: brown;
+    }
+
+    .carrinho {
+        float: right;
+    }
+
+    .sellcard {
+        float: right;
+        width: 23.40%;
+        margin: 10px;
+    }
+
+    .sellcard img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .sellcard .descricao {
+        text-align: center;
+        font-size: 15px;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .sellcard .valor {
+        text-align: center;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    .sellcard .compra {
+        text-align: center;
+    }
+
+    @media (max-width: 412px) {
+        .topnav a {
+            display: block;
+            text-align: center;
+        }
+
+        .topnav {
+            height: 100px;
+        }
+
+        .carrinho {
+            float: none;
+        }
+
+        .container {
+            display: block;
+        }
+
+        .sellcard {
+            float: none;
+            display: inline;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .topnav a {
+            display: block;
+            text-align: center;
+        }
+
+        .topnav {
+            height: 100px;
+        }
+
+        .carrinho {
+            float: none;
+        }
+
+        .container {
+            display: block;
+        }
+
+        .sellcard {
+            float: none;
+            display: inline;
+        }
+    }
+</style>
+
+</html>
