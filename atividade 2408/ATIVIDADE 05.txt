@@ -1,0 +1,7 @@
+Crie a responsividade das duas páginas criadas no exercício 04, considerando telas de smartphone e tablets, bem como orientação de paisagem e porta retrato. Em relação ao conteúdo, faça para o cabeçalho, conteúdo e rodapé.
+
+- Colocar o nome da dupla
+
+ 
+
+- Manda o link do github e github pages como resposta.
