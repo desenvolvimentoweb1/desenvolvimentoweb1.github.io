@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid #01</title>
+    <style>
+        /* https://caniuse.com/#feat=css-grid */
+        
+        html,
+        body {
+            margin: 20px;
+            height: calc(100% - 40px);
+            background-color: lightgray;
+        }
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            border-radius: 10px;
+            /* border: solid 5px dodgerblue; */
+            background: rgb(0, 0, 0);
+            margin: 10px;
+            color: white;
+            padding-left: 30px;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        body {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+        }
+
+        .menos, .barra, .asterisco {
+            padding-left: 30px;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .mais {
+            padding-left: 30px;
+            align-items: center;
+            justify-content: flex-start;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .dot {
+            padding-left: 30px;
+            align-items: center;
+            justify-content: flex-start;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .enter {
+            padding-top: 30px;
+            padding-left: 0px;
+            align-items: flex-start;
+            justify-content: center;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .zero {
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        
+        .del {
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="num">Num Lock</div>
+    <div class="asterisco">*</div>
+    <div class="barra">/</div>
+    <div class="menos">-</div>
+    <div class="mais">+</div>
+    <div class="enter">Enter</div>
+    <div class="del">Del</div>
+    <div class="nine">9</div>
+    <div class="eight">8</div>
+    <div class="seven">7</div>
+    <div class="six">6</div>
+    <div class="five">5</div>
+    <div class="four">4</div>
+    <div class="tree">3</div>
+    <div class="two">2</div>
+    <div class="one">1</div>
+    <div class="zero">0</div>
+    <div class="dot">.</div>
+</body>
+
+</html>

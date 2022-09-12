@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid #01</title>
+    <style>
+        /* https://caniuse.com/#feat=css-grid */
+        
+        html,
+        body {
+            margin: 20px;
+            height: calc(100% - 40px);
+            background-color: lightgray;
+        }
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border-radius: 10px;
+            /* border: solid 5px dodgerblue; */
+            background: rgb(34, 30, 255);
+            margin: 10px;
+            color: white;
+        }
+
+        body {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: auto auto auto auto auto;
+        }
+
+
+        .mais {
+            padding-top: 30px;
+            align-items: flex-start;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .enter {
+            padding-top: 30px;
+            align-items: flex-start;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .zero {
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        
+        .del {
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="num">num</div>
+    <div class="barra">/</div>
+    <div class="asterisco">*</div>
+    <div class="menos">-</div>
+    <div class="mais">+</div>
+    <div class="enter">enter</div>
+    <div class="del">del</div>
+    <div class="zero">0</div>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="tree">3</div>
+    <div class="four">4</div>
+    <div class="five">5</div>
+    <div class="six">6</div>
+    <div class="seven">7</div>
+    <div class="eight">8</div>
+    <div class="nine">9</div>
+</body>
+
+</html>
