@@ -11,7 +11,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 10px 10px 10px 0px;
+        padding: 10px 10px 0px 10px;
+        border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+        margin-bottom: 15px;
+        margin-top: 30px;
     }
 
     .populares .populares__cabecalho .populares__titulo {
