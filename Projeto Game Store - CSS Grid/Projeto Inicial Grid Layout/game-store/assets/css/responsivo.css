@@ -1,0 +1,241 @@
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    .app {
+        background: #f1f1f1;
+        display: grid;  
+        font-family: Arial, Helvetica, sans-serif;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 'cabecalho' 'conteudo' 'rodape';
+        height: 100vh;
+        width: 100vw;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .cabecalho {
+        grid-area: cabecalho;
+        padding-left: 20px;
+    }
+     
+    .conteudo {
+        grid-area: conteudo;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .rodape {
+        grid-area: rodape;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: white;
+        padding: 10px;
+        margin-top: 70px;
+        font-size: 0.7rem;
+    }
+    
+    /* img {
+        max-height: 100%;
+        max-width: 100%;
+    } */
+    
+    .menu__item {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    
+    .menu__item a{
+        color: black;
+    }
+    
+    .menu__item .ativo{
+        border-bottom: 2px solid #00bfff;
+    }
+    
+    .menu__link {
+        padding-left: 15px;
+    }
+
+}
+
+
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    .destaques {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 400px 200px;
+        gap: 5px;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding-bottom: 20px;
+    }
+
+    .destaques div:nth-child(1) {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        background-image: url(../img/fortnite.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .destaques > div:nth-child(2){
+        display: none;
+    }
+
+    .destaques div:nth-child(3){
+        display: none;
+    }
+
+    .destaques div:nth-child(4){
+        display: none;
+    }
+
+
+    .destaques div:nth-child(5){
+        display: none;
+    }
+
+    .destaques div:nth-child(6){
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+
+    }
+
+    .caixa {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .destaques__titulo {
+        background-color:rgba(16, 17, 15, 0.7);
+        color: white;
+        font-size: 0.9rem;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .destaques__categorias {
+        background-color: white
+    }
+
+    .destaques__categorias___lista {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .destaques__categorias__lista li:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .destaques__categorias__lista li:nth-child(2) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .destaques__categorias__lista li:nth-child(3) {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .destaques__categorias__lista li:nth-child(4) {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+    }
+
+    .destaques__categorias___link {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-decoration: none;
+        color: black;
+        font-size: 0.9rem;
+        padding: 40px;
+        padding-left: 10%;
+        text-align: center;
+    }
+
+}
+
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    .populares {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .populares .populares__cabecalho {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .populares .populares__cabecalho .populares__titulo {
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+
+    .populares .populares__cabecalho .populares__botao {
+        color: #000000;
+        font-size: 0.8rem;
+        font-weight: 100;
+        border: 0px;
+    }
+
+    .populares .populares__conteudo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 400px);
+        gap: 40px;
+    }
+
+
+    .populares__card {
+        background-color: white;
+        height: 100%;
+    }
+
+    .populares__card___imagem {
+        height: 150px;
+        width: 100%;
+    }
+
+    .populares__card___cabecalho .populares__card___titulo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000000;
+        padding-left: 10px;
+    }
+
+    .populares__card___cabecalho .populares__card___data {
+        font-size: 0.8rem;
+        font-weight: 50;
+        color: #616161;
+        padding-left: 10px;
+    }
+
+    .populares__card___corpo .populares__card___descricao {
+        display: flex;
+        font-size: 0.9rem;
+        font-weight: 100;
+        color: #000000;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        text-align: justify;
+        line-height: 20px;
+    }
+
+}
