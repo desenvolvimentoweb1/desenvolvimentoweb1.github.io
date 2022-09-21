@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    <script>
+        // Elaborar um programa que leia a duração de uma viagem em dias e horas.
+        // Calcule e informe a duração total da viagem em número de horas.
+
+        let viagem_em_dias = Number(prompt("Viagem em dias"))
+        
+        let viagem_em_horas = Number(prompt("Viagem em horas"))
+        
+        let duracao_total = (viagem_em_dias * 24) + viagem_em_horas
+        
+        
+        alert(`\n
+        Viagem em dias: ${viagem_em_dias.toFixed(2)}\n
+        Viagem em horas: ${viagem_em_horas.toFixed(2)}\n
+        Duração total: ${duracao_total.toFixed(2)}\n
+        `)
+    </script>
+</body>
+</html>

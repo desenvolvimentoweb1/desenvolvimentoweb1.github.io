@@ -1,0 +1,33 @@
+<!-- Questão 01 -->
+<!-- Elaborar um programa que leia o valor de um jantar. Calcule e informe o -->
+<!-- valor da taxa do garçom (10%) e o valor total a ser pago. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+<body>
+    <script>
+
+        let valor_da_janta = Number(prompt("Valor do jantar R$: "))
+        
+        let valor_da_taxa_do_gar_om = 500 * 0.1
+        
+        let valor_total_a_ser_pago = valor_da_janta + valor_da_taxa_do_gar_om
+        
+        
+        alert(`\n
+        Valor da janta: ${valor_da_janta.toFixed(2)}\n
+        Valor da taxa do garçom: ${valor_da_taxa_do_gar_om.toFixed(2)}\n
+        Valor total a ser pago: ${valor_total_a_ser_pago.toFixed(2)}\n
+        `)
+    </script>
+</body>
+</html>
+

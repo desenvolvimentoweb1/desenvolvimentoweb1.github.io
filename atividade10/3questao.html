@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+<body>
+    <script>
+        // Elaborar um programa para uma pizzaria, o qual leia o valor total de uma
+        // conta e quantos clientes vão pagá-la. Calcule e informe o valor a ser pago
+        // por cliente.
+
+        const mensagem1 = "Valor total da conta"
+        const mensagem2 = "Número de clientes"
+        const mensagem3 = "Valor por cliente"
+
+
+        let valor_total_da_conta = Number(prompt(mensagem1))
+        
+        let numero_de_clientes = Number(prompt(mensagem2))
+        
+        let valor_por_cliente = valor_total_da_conta/numero_de_clientes
+        
+        alert(`\n
+        ${mensagem1} : ${valor_total_da_conta.toFixed(2)}\n
+        ${mensagem2}: ${numero_de_clientes.toFixed(2)}\n
+        ${mensagem3}: ${valor_por_cliente.toFixed(2)}\n
+        `)
+    </script>
+</body>
+</html>

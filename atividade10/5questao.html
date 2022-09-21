@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+<body>
+    <script>
+        // Uma Empresa de vendas de softwares paga a seu vendedor um fixo de R$
+        // 1200,00 por mês, mais uma comissão de 15% pelo seu valor de vendas no
+        // mês. Faça um algoritmo que leia o valor da venda e determine o salário total
+        // do funcionário. Mostre as informações que você achar necessário.
+
+        const mensagem1 = "Valor de vendas no mês"
+        const mensagem2 = "Salário do funcionário"
+        // const mensagem3 = "Valor por cliente"
+
+
+        let valor_de_vendas_no_mes = Number(prompt(mensagem1))
+        
+        let sal_rio_do_funcionario = 1200 + (valor_de_vendas_no_mes * 0.15)
+        
+        
+        alert(`\n
+        ${mensagem1}: ${valor_de_vendas_no_mes.toFixed(2)}\n
+        ${mensagem2}: ${sal_rio_do_funcionario.toFixed(2)}\n
+        `)
+    </script>
+</body>
+</html>

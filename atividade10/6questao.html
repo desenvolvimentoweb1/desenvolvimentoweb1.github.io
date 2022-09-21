@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    <script>
+        // Escreva um programa para ler o número total de eleitores de um município, o
+        // número de votos brancos, nulos e válidos. Calcular e escrever o percentual
+        // que cada um representa em relação ao total de eleitores.
+
+
+        const mensagem1 = "Número total de eleitores de um município"
+        const mensagem2 = "número de votos brancos"
+        const mensagem3 = "número de votos nulos"
+        const mensagem4 = "número de votos válidos"
+
+        let n_mero_total_de_eleitores_de_um_munic_pio = Number(prompt(mensagem1))
+        
+        let n_mero_de_votos_brancos = n_mero_total_de_eleitores_de_um_munic_pio/Number(prompt(mensagem2))
+
+        let n_mero_de_votos_nulos = n_mero_total_de_eleitores_de_um_munic_pio/Number(prompt(mensagem3))
+
+        let n_mero_de_votos_v_lidos = n_mero_total_de_eleitores_de_um_munic_pio/Number(prompt(mensagem4))
+        
+        alert(`\n
+        ${mensagem1} : ${n_mero_total_de_eleitores_de_um_munic_pio.toFixed(2)}\n
+        ${mensagem2}: ${n_mero_de_votos_brancos.toFixed(2)}\n
+        ${mensagem3}: ${n_mero_de_votos_nulos.toFixed(2)}\n
+        ${mensagem3}: ${n_mero_de_votos_v_lidos.toFixed(2)}\n
+        `)
+    </script>
+</body>
+</html>
