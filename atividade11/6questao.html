@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    <script>
+        // A entrada para um clube de pesca custa R$ 20,00 por pessoa e cada pessoa 
+        // tem  direito  a  levar  um  peixe.  Peixes  extras  custam  12,00.  Elabore  um 
+        // programa que leia o número de pessoas de uma família que foram ao clube e 
+        // o número de peixes obtidos na pescaria. Informe o valor a pagar. 
+
+        const mensagem1 = "Número de pessoas de uma família que foram ao clube"
+        const mensagem2 = "Número de peixes obtidos na pescaria"
+        const mensagem3 = "Valor a pagar"
+
+        let n_mero_de_pessoas_de_uma_fam_lia_que_foram_ao_clube = Number(prompt(mensagem1))
+        
+        let n_mero_de_peixes_obtidos_na_pescaria = Number(prompt(mensagem2))
+
+        let total_a_pagar =(n_mero_de_pessoas_de_uma_fam_lia_que_foram_ao_clube * 20) +  Math.abs(((n_mero_de_pessoas_de_uma_fam_lia_que_foram_ao_clube - n_mero_de_peixes_obtidos_na_pescaria)) * 12)
+        
+        alert(`\n
+        ${mensagem1} : ${n_mero_de_pessoas_de_uma_fam_lia_que_foram_ao_clube.toFixed(0)}\n
+        ${mensagem2}: ${n_mero_de_peixes_obtidos_na_pescaria.toFixed(0)}\n
+        ${mensagem3}: ${total_a_pagar.toFixed(2)}\n
+        `)
+    </script>
+</body>
+</html>

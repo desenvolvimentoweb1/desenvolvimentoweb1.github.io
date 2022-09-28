@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+<body>
+    <script>
+        // Elaborar  um  programa  que  leia  um  número  –  que  deve  ser  uma  centena. 
+        // Calcule  e  exiba  a  centena  invertida.  Caso  o  número  não  seja  uma  centena, 
+        // exiba mensagem. 
+
+        const mensagem1 = "Digite uma centena"
+        const mensagem2 = "Resultado da inversão"
+        const mensagem3 = "Valor não é centena"
+
+        let valor = prompt(mensagem1)
+        if (isNaN(valor)) {
+            alert(`\n
+                ${mensagem3}\n
+            `)
+        }
+        console.log(valor.length)
+        if (valor.length !== 3) {
+            alert(`\n
+                ${mensagem3}\n
+            `)
+        }
+        else {
+            valor = String(valor.split("").reverse()).replace(",", "")
+            alert(`\n
+                ${mensagem2}: ${valor.replace(",", "")}\n
+            `)
+        }
+        
+    </script>
+</body>
+</html>

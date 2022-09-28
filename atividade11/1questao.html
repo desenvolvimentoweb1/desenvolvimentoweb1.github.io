@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+<body>
+    <script>
+
+        //Faça um programa que mostre o novo preço de um produto sabendo-se que 
+        //este  terá um  desconto  de  15%,  mostrando  também  a  classificação  do 
+        //produto segundo o as informações abaixo.
+
+        const mensagem1 = "Preço do produto"
+        const mensagem2 = "Novo preço"
+
+        let preco_do_produto = parseFloat(prompt(mensagem1))
+        let desconto = preco_do_produto * 0.15
+        let novo_preco = preco_do_produto - desconto
+        if (novo_preco < 500) {
+            alert(`\n
+            ${mensagem3} : ${novo_preco.toFixed(2)}\n
+            Classificação: BARATO\n
+            `)
+        }
+        if (novo_preco >= 500) {
+            alert(`\n
+            ${mensagem3} : ${novo_preco.toFixed(2)}\n
+            Classificação: CARO\n
+            `)
+        }
+
+    </script>
+</body>
+</html>
+

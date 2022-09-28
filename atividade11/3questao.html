@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+<body>
+    <script>
+        // Faça  um  programa  que  receba  a  altura  e  o  sexo  de  uma  pessoa,  calcule  e 
+        // mostre o seu peso ideal, utilizando as seguintes fórmulas: 
+        
+        // - para homens: (72 * altura) - 58; 
+        // - para mulheres: (62 * altura) - 44
+
+        const mensagem1 = "Digite sua altura"
+        const mensagem2 = "Digite o seu sexo: (F/M)"
+        const mensagem3 = "Peso ideal"
+
+        let altura = parseFloat(prompt(mensagem1))
+        let sexo = String(prompt(mensagem2)).toUpperCase()
+        if (sexo === 'M') {
+            let peso_ideal = (72 * altura) - 58
+            alert(`\n
+                ${mensagem3} : ${peso_ideal.toFixed(2)}\n
+            `)
+        }
+        else if (sexo === 'F'){
+            let peso_ideal = (62 * altura) - 44
+            alert(`\n
+                ${mensagem3} : ${peso_ideal.toFixed(2)}\n
+            `)
+        }
+        else {
+            alert(`\n
+                Inválido\n
+            `)
+        }
+        
+    </script>
+</body>
+</html>

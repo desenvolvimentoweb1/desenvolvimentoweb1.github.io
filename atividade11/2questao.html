@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    <script>
+        //Uma agência bancária possui dois tipos de investimentos, conforme o quadro 
+        //abaixo.  Faça  um  programa  que  receba  o  tipo  do  investimento  e  o  valor  do 
+        //investimento,  calcule  e  mostre  o  valor  corrigido  de  acordo  com  o  tipo  de 
+        //investimento.
+
+        let tipo_do_investimento = String(prompt("Tipo do investimento (P = Poupança, R = Renda Fixa)")).toUpperCase()
+        let valor_do_investimento = parseFloat(prompt("Valor do investimento"))
+        let valor_corrigido = 0
+        if (tipo_do_investimento == "P") {
+            valor_corrigido = valor_do_investimento * 1.05
+            tipo_do_investimento = "Poupança"
+        }
+        if (tipo_do_investimento == "R") {
+            valor_corrigido = valor_do_investimento * 1.10
+            tipo_do_investimento = "Renda Fixa"
+        }
+
+        alert(`\n
+        Tipo do investimento: ${tipo_do_investimento}\n
+        Valor do investimento: ${valor_do_investimento}\n
+        Valor corrigido: ${valor_corrigido.toFixed(2)}\n
+        `)
+    </script>
+</body>
+</html>
