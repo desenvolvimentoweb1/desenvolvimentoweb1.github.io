@@ -1,0 +1,43 @@
+<!-- Questão 01 -->
+<!-- Elaborar um programa que leia o valor de um jantar. Calcule e informe o -->
+<!-- valor da taxa do garçom (10%) e o valor total a ser pago. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+<body>
+    <script>
+        // Ler 10 valores e mostrar quantos desses valores lidos estão no intervalo [10,20]
+        // (incluindo os valores 10 e 20 no intervalo) e quantos deles estão fora deste
+        // intervalo. Usando estrutura de repetição WHILE.
+        
+        let array_dentro = [];
+        let array_fora = [];
+        let index = 0
+        while (index < 10) {
+            let valor = Number(prompt("Valor "+index))
+            if (valor >= 10 && valor <= 20) {
+                array_dentro.push(valor);   
+            }else {
+                array_fora.push(valor)
+            }
+            index++
+        }
+
+        alert(`
+            Valores dentro do intervalo [10,20]: ${array_dentro} \n
+            Quantidade: ${array_dentro.length}\n\n
+            Valores fora do intervalo [10,20]: ${array_fora} \n
+            Quantidade: ${array_fora.length}\n
+        `)
+    </script>
+</body>
+</html>
+
