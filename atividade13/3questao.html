@@ -14,17 +14,17 @@
     // a) Menor temperatura da semana
     // b) Maior temperatura da semana
         
-    var temp = [];
+    var temperaturas = [];
     var menor = 0;
     var maior = 0;
     var dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
     for (var i = 0; i < 7; i++) {
-        temp[i] = parseFloat(prompt(`Digite a temperatura média de ${dias[i]}: `));
+        temperaturas[i] = parseFloat(prompt(`Digite a temperatura média de ${dias[i]}: `));
     }
 
     // usando reduce
-    maior = notas.reduce((valor_anterior, valor_atual) => valor_anterior > valor_atual ? valor_anterior : valor_atual);
-    menor = notas.reduce((valor_anterior, valor_atual) => valor_anterior < valor_atual ? valor_anterior : valor_atual);
+    maior = temperaturas.reduce((valor_anterior, valor_atual) => valor_anterior > valor_atual ? valor_anterior : valor_atual);
+    menor = temperaturas.reduce((valor_anterior, valor_atual) => valor_anterior < valor_atual ? valor_anterior : valor_atual);
 
     // mostrar com alert
     let msg = "";
