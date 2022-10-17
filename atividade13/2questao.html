@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    <script>
+    // Ler um Array A de 10 números. Após, ler mais um número e guardar em uma
+    // variável X. Armazenar em um Array M o resultado de cada elemento de A
+    // multiplicado pelo valor X. Logo após, mostrar o Array M.
+
+
+    var array_A = [];
+    var array_M = [];
+    var valor_x = 0;
+
+    for (var i = 0; i < 10; i++) {
+        array_A[i] = parseFloat(prompt(`Digite um número (Valor array_A[${i}]): `));
+    }
+
+    valor_x = parseFloat(prompt("Digite um número (Valor X): "));
+
+    // usando map
+    array_M = array_A.map((valor) => valor * valor_x);
+
+    //mostrar com alert
+    let msg = "";
+    array_M.forEach((valor, indice) => msg += `Valor array_M[${indice}]: ${valor} \n`);
+
+    alert(msg);
+
+    </script>
+</body>
+</html>

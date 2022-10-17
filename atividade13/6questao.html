@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    <script>
+    // Elaborar um programa que simule saques em um caixa eletrônico de um
+    // banco. Ler o valor solicitado por clientes até ser digitado 0. Sabendo que o
+    // caixa dispõe apenas de notas de 10, exiba após cada leitura se o saque é
+    // válido ou inválido. Ao final, listar os saques válidos e a soma dos saques.
+    // Exiba também o número de saques inválidos.
+
+    var saques = [];
+    var saques_validos = [];
+    var saques_invalidos = [];
+    var soma = 0;
+    var msg = "";
+
+    while (true) {
+        saques.push(parseInt(prompt("Digite o valor do saque: ")));
+        if (saques[saques.length - 1] == 0) {
+            saques.pop();
+            break;
+        }
+    }
+
+    saques.forEach((valor, indice) => {
+        if (valor % 10 == 0) {
+            saques_validos.push(valor);
+            soma += valor;
+        } else {
+            saques_invalidos.push(valor);
+        }
+    });
+    
+    msg = "Saques válidos: \n";
+    saques_validos.forEach((valor, indice) => msg += `Valor: ${valor} \n`);
+    msg += `Soma dos saques válidos: ${soma} \n`;
+    msg += "Saques inválidos: \n";
+    saques_invalidos.forEach((valor, indice) => msg += `Valor: ${valor} \n`);
+
+    alert(msg);
+    
+    </script>
+</body>
+</html>

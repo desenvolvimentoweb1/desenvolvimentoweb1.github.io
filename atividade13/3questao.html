@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+<body>
+    <script>
+    // Faça um algoritmo para ler e armazenar em um Array a temperatura média
+    // de todos os dias de uma semana.
+    // Calcular e escrever:
+    // a) Menor temperatura da semana
+    // b) Maior temperatura da semana
+        
+    var temp = [];
+    var menor = 0;
+    var maior = 0;
+    var dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+    for (var i = 0; i < 7; i++) {
+        temp[i] = parseFloat(prompt(`Digite a temperatura média de ${dias[i]}: `));
+    }
+
+    // usando reduce
+    maior = notas.reduce((valor_anterior, valor_atual) => valor_anterior > valor_atual ? valor_anterior : valor_atual);
+    menor = notas.reduce((valor_anterior, valor_atual) => valor_anterior < valor_atual ? valor_anterior : valor_atual);
+
+    // mostrar com alert
+    let msg = "";
+    msg += `Maior temperatura: ${maior} \n`;
+    msg += `Menor temperatura: ${menor} \n`;
+
+    alert(msg);
+    </script>
+</body>
+</html>

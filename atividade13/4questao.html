@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04</title>
+</head>
+<body>
+    <script>
+    // Elaborar um programa que leia nome e nota de ‘n’ alunos até o usuário
+    // digitar ‘Fim’ no nome. Após, verifique e exiba a maior nota da turma. Se a
+    // maior nota for superior ou igual a 7, exiba os alunos que a obtiveram. Caso
+    // contrário, exiba a mensagem “Não há alunos em destaque na turma”.
+
+    var nomes = [];
+    var notas = [];
+    var maior = 0;
+    var msg = "";
+
+    while (true) {
+        nomes.push(prompt("Digite o nome do aluno: "));
+        if (nomes[nomes.length - 1] == "Fim") {
+            nomes.pop();
+            break;
+        }
+        notas.push(parseFloat(prompt("Digite a nota do aluno: ")));
+    }
+
+    // usando reduce
+    maior = notas.reduce((valor_anterior, valor_atual) => valor_anterior > valor_atual ? valor_anterior : valor_atual);
+    
+    if (maior >= 7) {
+        var destaque = notas.filter(nota => nota >= 7);
+        destaque.forEach((valor, indice) => msg += `Nome: ${nomes[indice]} - Nota: ${valor} \n`);
+    } else {
+        msg = "Não há alunos em destaque na turma";
+    }
+
+    </script>
+</body>
+</html>

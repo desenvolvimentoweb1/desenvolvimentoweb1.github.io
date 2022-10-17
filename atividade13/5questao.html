@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04</title>
+</head>
+<body>
+    <script>
+    // Elaborar um programa que leia nome e idade de ‘n’ clientes de um banco
+    // (até ser digitado ‘Fim’ no nome). Após, classifique e exiba os clientes em 2
+    // grupos: preferencial (a partir de 60 anos) e Fila normal (até 59 anos). Informe
+    // a ordem de atendimento em cada grupo de acordo com a chegada dos
+    // clientes.
+
+    var nomes = [];
+    var idades = [];
+    var preferencial = [];
+    var fila_normal = [];
+    var msg = "";
+
+    while (true) {
+        nomes.push(prompt("Digite o nome do cliente: "));
+        if (nomes[nomes.length - 1] == "Fim") {
+            nomes.pop();
+            break;
+        }
+        idades.push(parseInt(prompt("Digite a idade do cliente: ")));
+    }
+
+    // usando forEach
+    idades.forEach((valor, indice) => {
+        if (valor >= 60) {
+            preferencial.push(nomes[indice]);
+        } else {
+            fila_normal.push(nomes[indice]);
+        }
+    });
+
+    msg = "Preferencial: \n";
+    preferencial.forEach((valor, indice) => msg += `Nome: ${valor} \n`);
+    msg += "Fila normal: \n";
+    fila_normal.forEach((valor, indice) => msg += `Nome: ${valor} \n`);
+
+    alert(msg);
+
+
+    </script>
+</body>
+</html>

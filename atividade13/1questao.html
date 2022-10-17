@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+<body>
+    <script>
+    // Criar um programa com 2 arrays, um para receber 5 nomes de alunos e outro
+    // para receber 5 notas dos alunos, mostrar os nomes e as notas digitadas,
+    // mostrar também a média total das notas dos alunos.
+
+    var nomes = [];
+    var notas = [];
+    var soma = 0;
+    var media = 0;
+
+    for (var i = 0; i < 5; i++) {
+        nomes[i] = prompt("Digite o nome do aluno: ");
+        notas[i] = parseFloat(prompt("Digite a nota do aluno: "));
+        soma += notas[i];
+    }
+
+    media = soma / 5;
+
+    //mostrar com alert
+    let msg = "";
+    // usando forEach
+    nomes.forEach((valor, indice) => msg += `Nome: ${valor} - Nota: ${notas[indice]} \n`);
+
+    msg += "Média: " + media;
+
+    alert(msg);
+
+    </script>
+</body>
+</html>
+
