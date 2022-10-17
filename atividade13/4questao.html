@@ -27,7 +27,6 @@
         notas.push(parseFloat(prompt("Digite a nota do aluno: ")));
     }
 
-    // usando reduce
     maior = notas.reduce((valor_anterior, valor_atual) => valor_anterior > valor_atual ? valor_anterior : valor_atual);
     
     if (maior >= 7) {
@@ -36,6 +35,8 @@
     } else {
         msg = "Não há alunos em destaque na turma";
     }
+
+    alert(msg);
 
     </script>
 </body>

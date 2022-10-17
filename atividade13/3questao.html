@@ -22,14 +22,23 @@
         temperaturas[i] = parseFloat(prompt(`Digite a temperatura média de ${dias[i]}: `));
     }
 
-    // usando reduce
-    maior = temperaturas.reduce((valor_anterior, valor_atual) => valor_anterior > valor_atual ? valor_anterior : valor_atual);
-    menor = temperaturas.reduce((valor_anterior, valor_atual) => valor_anterior < valor_atual ? valor_anterior : valor_atual);
+    let indice_menor = temperaturas.reduce((indice, valor, indice_atual) => {
+        if (valor < indice) {
+            indice = indice_atual;
+        }
+        return indice;
+    }, 0);
 
-    // mostrar com alert
+    let indice_maior = temperaturas.reduce((indice, valor, indice_atual) => {
+        if (valor > indice) {
+            indice = indice_atual;
+        }
+        return indice;
+    }, 0);
+
     let msg = "";
-    msg += `Maior temperatura: ${maior} \n`;
-    msg += `Menor temperatura: ${menor} \n`;
+    msg += `Maior temperatura: ${temperaturas[indice_maior]} - no dia de ${dias[indice_maior]}\n`;
+    msg += `Menor temperatura: ${temperaturas[indice_menor]} - no dia de ${dias[indice_menor]}\n`;
 
     alert(msg);
     </script>
