@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background: #848080;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+main {
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 90vh;
+    width: 100vw;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.section__title {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.section__botoes {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.section__botoes button {
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.section__botoes button:hover {
+    background-color: #fff;
+    color: #00bfff;
+    border: 1px solid #00bfff;
+}
+
+.section__botoes button a {
+    color: #fff;
+    text-decoration: none;
+}
