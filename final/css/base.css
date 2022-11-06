@@ -98,7 +98,7 @@ footer {
 
 
 .section__botoes button:hover {
-    background-color: red;
+    background-color: rgb(255, 81, 0);
     color: purple;
     border: 1px solid purple;
 }
@@ -115,3 +115,5 @@ footer {
 #id__footer__title {
     text-align: center;
 }
+
+
