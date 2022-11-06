@@ -1,7 +1,7 @@
 
 
 
-document.getElementById("id__footer__title").innerHTML = "Trabalho final WEB I<br>Alunos: Iago Costa, Kayro Santos e Leyrisvan da Costa<br>Professor: Warley<br>2020.2";
+document.getElementById("id__footer__title").innerHTML = "Trabalho final WEB I<br>Alunos: Iago Costa, Kayro Santos e Leyrisvan da Costa<br>Professor: Dr. Warley Muricy<br>2020.2";
 
 
 // Trabalho final: https://desenvolvimentoweb1.github.io/final/inicio.html
