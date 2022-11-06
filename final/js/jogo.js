@@ -98,10 +98,10 @@ function validate() {
 
 function show_texts() {
     for (let y = 7; y > count_incorrect_pieces; y--) {
-        console.log("y: ", y);
-        // console.log("p__0"+String(y));
+        // console.log("y: ", y);
+        console.log("p__0"+String(7-y));
         // console.log(document.querySelectorAll('*[id]'))
-        const item = document.getElementById("p__0"+String(y));
+        const item = document.getElementById("p__0"+String(8-y));
         // console.log(item);
         item.style.display = "";
     }
