@@ -7,43 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela do Quiz</title>
     <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/quiz.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <p>
-            Tela do Quiz
-        </p>
-    </header>
-    <main>
-        <section class="section__title">
-            Trabalho final WEB I. Alunos Iago Costa, Kayro Santos e Leyrisvan 
+    <div id="wrapper">
+        <header>
+            <p>
+                Tela do Quiz
+            </p>
+        </header>
+        <main>
+            <section class="section__botoes">
+                <a href="estatistica.html">
+                    <button>Estatística</button>
+                </a>
+                <a href="extra.html">
+                    <button>Extra</button>
+                </a>
+                <a href="informativa.html">
+                    <button>Informativa</button>
+                </a>
+                <a href="jogo.html">
+                    <button>Jogo</button>
+                </a>
+                <a href="inicio.html">
+                    <button>Início</button>
+                </a>
+            </section>
 
-        </section>
+            <section class="section__info" style="margin-top: 160px;">
+                <p class="title__quiz">
+                    Quiz sobre as urnas
+                </p>
+                <div class="grid__quiz">
+                    <div class="screen__quiz">
+                        <p class="screen__quiz__title" id="id__screen__quiz__title">
+                            
+                        </p>
+                    </div>
+                    <div class="buttons__quiz" id="id__buttons__quiz">
+                        <button class="button__quiz__fake" id="id__button__quiz__fake" onclick="answer(0)">Fake</button>
+                        <button class="button__quiz__true" id="id__button__quiz__true" onclick="answer(1)">True</button>
 
-        <section class="section__botoes">
-            <button>
-                <a href="estatistica.html">Estatística</a>
-            </button>
-            <button>
-                <a href="extra.html">Extra</a>
-            </button>
-            <button>
-                <a href="informativa.html">Informativa</a>
-            </button>
-            <button>
-                <a href="jogo.html">Jogo</a>
-            </button>
-            <button>
-                <a href="inicio.html">Início</a>
-            </button>
-        </section>
-    </main>
-    <footer>
-        <p>
-            Todos os direitos reservados
-        </p>
-    </footer>
+                        <button class="button__quiz__back" id="id__button__quiz__back" onclick="change_page(0)">Back</button>
+                        <button class="button__quiz__next" id="id__button__quiz__next" onclick="change_page(1)">Next</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p id="id__footer__title"></p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./js/quiz.js"></script>
+    <script type="text/javascript" src="./js/base.js"></script>
 </body>
 
 </html>

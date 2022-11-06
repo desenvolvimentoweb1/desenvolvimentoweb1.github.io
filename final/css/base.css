@@ -4,12 +4,24 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+    background-color: black;
+}
+
 
 header {
-    background: #848080;
+    background: orange;
     font-family: Arial, Helvetica, sans-serif;
-    height: 5vh;
-    width: 100vw;
+    height: 40px;
+    /* width: 100vw; */
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -19,32 +31,30 @@ header {
 
 
 main {
-    background: #f1f1f1;
+    background: black;
     font-family: Arial, Helvetica, sans-serif;
-    height: 90vh;
-    width: 100vw;
+    height: 100%;
+    /* width: 100vw; */
+    padding-bottom: 100px;
 }
+
 
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: orange;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
-    height: 5vh;
-    width: 100vw;
+    height: 40px;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
-.section__title {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
 
 .section__botoes {
     display: flex;
@@ -52,11 +62,30 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    
 }
 
+
+@media (max-width: 768px) {
+    .section__botoes {
+        flex-direction: column;
+
+    }
+    .section__botoes a button {
+        height: 100%;
+        width: 100%;
+        margin: 0 !important;
+        border-radius: 0px !important;
+    }
+    .section__botoes a {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+    
+
 .section__botoes button {
-    background-color: #00bfff;
+    background-color: purple;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -67,13 +96,22 @@ footer {
     cursor: pointer;
 }
 
+
 .section__botoes button:hover {
-    background-color: #fff;
-    color: #00bfff;
-    border: 1px solid #00bfff;
+    background-color: red;
+    color: purple;
+    border: 1px solid purple;
 }
 
-.section__botoes button a {
-    color: #fff;
-    text-decoration: none;
+
+.section__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+
+#id__footer__title {
+    text-align: center;
 }

@@ -1,0 +1,11 @@
+.section__info p {
+    font-size: 1.5rem;
+    display: flex;
+    align-content: center;
+}
+
+.section__info{
+    /* font-size: 1.5rem; */
+    display: flex;
+    align-content: center;
+}
