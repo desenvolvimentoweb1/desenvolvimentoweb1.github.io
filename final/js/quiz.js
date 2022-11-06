@@ -14,10 +14,10 @@ let right_answers = [
     1
 ];
 let review_right_answers = [
-    "A sentença está correta. Apenas três países em todo mundo: Brasil, Cuba e Venezuela. Usam o voto eletrônico.<br><br>(Ano da pergunta: 2022)",
-    "A sentença está incorreta. O presidente da república no Brasil tem maior salário que o senador e o deputado federal.<br><br>(Ano da pergunta: 2022)",
-    "A sentença está incorreta. 27 senadores e 513 deputados federais serão eleitos em 2022.<br><br>(Ano da pergunta: 2022)",
-    "A sentença está correta. Votos nulos e brancos influenciam indiretamente no resultado das eleições.<br><br>(Ano da pergunta: 2022)"
+    "A sentença está correta.<br>Apenas três países em todo mundo: Brasil, Cuba e Venezuela. Usam o voto eletrônico.<br>(Ano da pergunta: 2022)<br>",
+    "A sentença está incorreta.<br>O presidente da república no Brasil tem maior salário que o senador e o deputado federal.<br>(Ano da pergunta: 2022)<br>",
+    "A sentença está incorreta.<br>27 senadores e 513 deputados federais serão eleitos em 2022.<br>(Ano da pergunta: 2022)<br>",
+    "A sentença está correta.<br>Votos nulos e brancos influenciam indiretamente no resultado das eleições.<br>(Ano da pergunta: 2022)<br>"
 ];
 let answered_questions = [];
 
